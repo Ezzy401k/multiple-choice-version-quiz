@@ -17,10 +17,10 @@ class QuizBrain:
         current_question = self.question_list[self.question_number]
         self.question_number += 1
         user_choice = input(f"Q{self.question_number}: {current_question.question}\n"  # Displaying the question text and options
-                            f"{current_question.option[0]}\n"
-                            f"{current_question.option[1]}\n"
-                            f"{current_question.option[2]}\n"
-                            f"{current_question.option[3]}\n"
+                            f"{current_question.options[0]}\n"
+                            f"{current_question.options[1]}\n"
+                            f"{current_question.options[2]}\n"
+                            f"{current_question.options[3]}\n"
                             f"Your choice: ")
         self.check_answer(user_choice, current_question.answer)
 
